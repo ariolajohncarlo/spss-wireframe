@@ -1,0 +1,126 @@
+<html>
+  <head>
+    <title>Create Supplier</title>
+    
+    <!--bootstrap stuff-->
+    <script src="js/bootstrap.min.js" ></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!--end bootstrap stuff-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+  </head>
+  <body>
+    
+    <!--Start Navbar code-->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+          <!--Menu-->
+
+          <!--Left Part-->
+          <div>
+            <ul class="nav navbar-nav">
+              <li><a href="" class="newbold">JRV SOLAR</a></li>
+            </ul>
+
+            <div>
+              
+              <ul class="nav navbar-nav">
+                
+                <li><a href="index.html" class="newbold">HOME</a></li>
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle newbold" data-toggle="dropdown">CREATE <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href='create_supplier.html' class="new">Supplier</a></li>
+                    <li><a href='create_component.html' class="new">Component</a></li>
+                    <li><a href='create_package.html' class="new">Package</a></li>
+                    <li><a href='create_user.html' class="new">User</a></li>
+                  </ul>
+                </li>
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle newbold" data-toggle="dropdown">VIEW <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href='view_suppliers.html' class="new">Suppliers</a></li>
+                    <li><a href='view_components.html' class="new">Components</a></li>
+                    <li><a href='view_packages.html' class="new">Packages</a></li>
+                    <li><a href='view_users.html' class="new">Users</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <ul class="nav navbar-nav pull-right">
+                <li>
+                  <a href="edit_profile.php" class="newbold">EDIT PROFILE</a>
+                </li>
+                <li>
+                  <p class="navbar-btn" style="padding-top:6; padding-bottom:6; padding-left:20; padding-right:20;">
+                    <a href="login.html" class="btn btn-danger btn-xs new" >
+                      <span class="glyphicon glyphicon-log-out"></span>
+                      LOGOUT
+                    </a>
+                  </p>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--end navbar code-->
+    
+    <br/><br/><br/><br/><br/>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2"></div>
+
+        <div class="col-md-8 customcontent">
+          <form class="form-horizontal" method="post" action="">
+            <fieldset>
+
+              <!-- Form Name -->
+              <legend align="center" class="newtitle"><br>CREATE SUPPLIER</legend>
+
+              <!-- Company name input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="p_number">Company Name:</label>
+                <div class="col-md-6">
+                  <input type="text" name="p_number" class="form-control input-md" required>
+                </div>
+              </div>
+              
+              <!-- Company Address input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="p_number">Address:</label>
+                <div class="col-md-6">
+                  <input type="text" name="p_number" class="form-control input-md" required>
+                </div>
+              </div>
+              
+              <!-- Contact Number input-->
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="p_number">Contact Number:</label>
+                <div class="col-md-6">
+                  <input type="text" name="p_number" class="form-control input-md" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-md-8"></div>
+                <div class="col-md-1">
+                  <button type="submit" class="btn btn-success">
+                    <span class="glyphicon glyphicon-plus-sign" style="padding-right:10"></span>Add Supplier
+                  </button>
+                </div>
+              </div>
+
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  
+  </body>
+</html>
